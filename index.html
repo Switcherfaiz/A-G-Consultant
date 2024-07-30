@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&G Consult</title>
+
+    <meta name="developer" content="Faiz Ahmad Ally(Switcher) &amp; Calvin Godliver John(Breldosg)">
+
+    <meta name="description"
+        content="A&G Consult, we specialize in quality management systems, quality improvement, monitoring and evaluation, ISO training, system implementation, and audits. Our mission is to Empowering organizations to achieve global standards of excellence through comprehensive audits, targeted training, and robust system setups">
+
+
+    <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo/favicon.png">
+
+    <link rel="apple-touch-icon" href="./assets/logo/favicon.png" sizes="180x180 152x152 120x120">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/constant-css.css">
+    <link rel="stylesheet" href="./assets/styles/mob_responsive.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <script src="./assets/script/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper d_flex flex__co flex__c_u">
+        <section class="top_section d_flex flex__c_c ">
+            <div class="cont height_F d_flex flex__c_b">
+
+                <div class="logo">
+                    <img src="./assets/logo/MainLogo.svg" alt="logo">
+                </div>
+
+                <div id="nav_open" class="nav_btn d_flex flex__c_c">
+                    <img src="./assets/icons/menu.svg" alt="menu">
+                </div>
+                <div class="navigation d_flex flex__c_b T_t_c">
+
+                    <div class="top_nav flex__c_b">
+                        <p class="title">Menu</p>
+                        <div id="close" class="close d_flex flex__c_c">
+                            <img src="./assets/icons/x.svg" alt="">
+                        </div>
+                    </div>
+
+                    <a href="#home" class="d_flex flex__c_u">home</a>
+                    <a href="#about" class="d_flex flex__c_u">about</a>
+                    <a href="#core-values" class="d_flex flex__c_u">core values</a>
+                    <a href="#partners" class="d_flex flex__c_u">partners</a>
+                    <a href="#services" class="d_flex flex__c_u">services</a>
+                    <a href="#location" class="d_flex flex__c_u">location</a>
+                    <a href="#contact" class="contactUsBtn">contact us</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="home" class="hero_section d_flex flex__c_c">
+
+            <div class="d_flex hero_cont flex__c_b">
+                <div class="word_cont d_flex flex__co flex__s_u">
+                    <p class="main_title">A&G <span style="color: var(--pri_color);">Consult</span></p>
+                    <p class="subtitle">Empowering organizations to achieve global standards.</p>
+                    <p class="moto_word">Join us on our journey to elevate quality standards across Africa and help your
+                        organization gain global credentials in ISO certification.</p>
+                    <div>
+                        <a href="#contact" class="contactUsBtn">Contact us</a>
+                    </div>
+                </div>
+
+                <div class="hero_pic d_flex flex__co ">
+                    <div>
+                        <div class="hero_img_b">
+                            <img src="./assets/image/hero_img1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="d_flex flex__c_e">
+                        <div class="hero_img_s">
+                            <img src="./assets/image/hero_img2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="about" class="aboutUs d_flex flex__co flex__c_c">
+            <div class="top d_flex flex__co">
+                <p class="title">About us</p>
+                <p class="subtext">At A&G Consult, we specialize in quality management systems, quality improvement,
+                    monitoring and evaluation, ISO training, system implementation, and audits.</p>
+            </div>
+            <div class="card_cont width_F d_flex flex__c_b">
+
+                <div class="item d_flex flex__co flex__c_c">
+                    <div class="icon">
+                        <img src="./assets/image/misionIcon.svg" alt="">
+                    </div>
+                    <div class="words d_flex flex__co">
+                        <p class="title">Mission Statement</p>
+                        <p class="subtext">
+                            Empowering organizations to achieve global standards of excellence through comprehensive
+                            audits, targeted training, and robust system setups.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item d_flex flex__co flex__c_c">
+                    <div class="icon">
+                        <img src="./assets/image/visionIcon.svg" alt="">
+                    </div>
+                    <div class="words d_flex flex__co">
+                        <p class="title">Vision Statement</p>
+                        <p class="subtext">To be the leading authority on quality in Africa. We are committed to this
+                            vision by implementing globally recognized standards, fostering continuous improvement, and
+                            collaborating closely with our clients to meet and exceed high standards of quality.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="core-values" class="coreValue d_flex flex__c_c">
+            <div class="d_flex flex__c_c core_cont">
+                <div class="hero_pic d_flex flex__co ">
+                    <div class="d_flex flex__c_e">
+                        <div class="hero_img_b">
+                            <img src="./assets/image/core_values2.webp" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hero_img_s">
+                            <img src="./assets/image/core_values1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="word_side d_flex flex__co">
+                    <p class="title">Core Values</p>
+                    <p class="subtext">Join us on our journey to elevate quality standards across Africa and help your
+                        organization gain global credentials in ISO certification.</p>
+
+                    <div class="list">
+                        <ul>
+                            <li>Ensures that excellence is at the heart of our services.</li>
+                            <li>Underpins our commitment to transparency and honesty in all our interactions.</li>
+                            <li>Guides us to create lasting impacts for our clients and the broader community.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners  d_flex flex__co flex__c_c">
+            <div class="top d_flex flex__co">
+                <p class="title">Partners</p>
+                <p class="subtext">Trusted with these companies to ensure we give you a good and high quality service.
+                </p>
+            </div>
+
+            <div class="logos_cont width_F_10 d_flex flex__c_a">
+                <a href="https://pecb.com/en" target="_blank" rel="noopener noreferrer" class="logos">
+                    <img src="./assets/logo/pecb.png" alt="">
+                </a>
+                <a href="https://www.sgs.com/en" target="_blank" rel="noopener noreferrer" class="logos">
+                    <img src="./assets/logo/sgs.png" alt="">
+                </a>
+                <a href="https://hebogroup.com/" target="_blank" rel="noopener noreferrer" class="logos">
+                    <img src="./assets/logo/h.png" alt="">
+                </a>
+            </div>
+        </section>
+
+
+        <section id="services" class="services d_flex flex__c_c">
+
+
+            <div class="word_side d_flex flex__co flex__c_c">
+                <p class="title">Services</p>
+                <p class="subtext">At A&G Consult, we offer a comprehensive suite of services designed to elevate your
+                    organization's quality standards and ensure compliance with international benchmarks. Our expert
+                    team provides tailored solutions in the following areas</p>
+
+                <div class="list d_flex flex__c_a ">
+
+                    <div class="item d_flex flex__c_u">
+                        <div class="icon d_flex flex__c_c">
+                            <img src="./assets/icons/quality.svg" alt="">
+                        </div>
+                        <p>Quality Management Systems</p>
+                    </div>
+
+                    <div class="item d_flex flex__c_u">
+                        <div class="icon d_flex flex__c_c">
+                            <img src="./assets/icons/quality_i.svg" alt="">
+                        </div>
+                        <p>Quality Improvement</p>
+                    </div>
+
+                    <div class="item d_flex flex__c_u">
+                        <div class="icon d_flex flex__c_c">
+                            <img src="./assets/icons/monitoring.svg" alt="">
+                        </div>
+                        <p>Monitoring and Evaluation</p>
+                    </div>
+
+                    <div class="item d_flex flex__c_u">
+                        <div class="icon d_flex flex__c_c">
+                            <img src="./assets/icons/training.svg" alt="">
+                        </div>
+                        <p>Training</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- 
+            <div class="hero_pic d_flex flex__co ">
+                <div class="d_flex flex__c_e">
+                    <div class="hero_img_b">
+                        <img src="./assets/image/services.webp" alt="">
+                    </div>
+                </div>
+
+            </div> -->
+        </section>
+
+        <section id="location" class="map d_flex flex__c_c width_F">
+            <div id="map" class="width_F">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4700.067532674969!2d39.23450588386483!3d-6.733668748449604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4d84bcf61dcd%3A0xc62a71cb0dee6e69!2sKawe%20beach!5e1!3m2!1sen!2stz!4v1717947515350!5m2!1sen!2stz"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+
+        <footer id="contact" class="d_flex flex__c_c">
+
+            <div class="cont d_flex width_F flex__s_b">
+                <div class="logo_sec height_F d_flex flex__c_c">
+
+                    <div class="in_cont d_flex flex__co flex__u_c">
+
+                        <div class="logo">
+                            <img src="./assets/logo/PriLogo.svg" alt="">
+                        </div>
+
+                        <p class="copyright">Copyright 2024 A&G Consultant</br>All Right reserved</p>
+
+                        <div class="social_cont d_flex flex__c_b">
+                            <a href="https://wa.me/+255-767759736" class="social d_flex flex__c_c">
+                                <img src="./assets/icons/whatsapp.svg" alt="whatsapp icon">
+                            </a>
+
+                            <a href="https://www.instagram.com/a.g_consult" class="social d_flex flex__c_c">
+                                <img src="./assets/icons/instagram.svg" alt="whatsapp icon">
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/a-g-consult/" class="social d_flex flex__c_c">
+                                <img src="./assets/icons/linkedin.svg" alt="whatsapp icon">
+                            </a>
+
+                            <a href="mailto:info@agconsult.co.tz" class="social d_flex flex__c_c">
+                                <img src="./assets/icons/mail.svg" alt="whatsapp icon">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="links  d_flex flex__co">
+                    <p class="title">Company</p>
+                    <div class="links_cont T_t_c d_flex flex__co">
+                        <a href="#home">home</a>
+                        <a href="#about">about</a>
+                        <a href="#core-values">core values</a>
+                        <a href="#partners">partners</a>
+                        <a href="#services">services</a>
+                        <a href="#location">location</a>
+                    </div>
+                </div>
+
+                <div class="links  d_flex flex__co">
+                    <p class="title">Find us</p>
+                    <div class="links_cont d_flex flex__co">
+                        <a href="mailto:info@agconsult.co.tz" target="_blank"
+                            rel="noopener noreferrer">info@agconsult.co.tz</a>
+                        <a href="tel:+255767759736" target="_blank" rel="noopener noreferrer">+255 767 759 736</a>
+                        <p>Kawe Beach, Dar es Salaam, 14121, Tanzania</p>
+
+                    </div>
+                </div>
+
+                <div id="contactForm" class="contact d_flex flex__co">
+                    <div class="title">Contact us</div>
+                    <input id="fullName" type="text" placeholder="Your full name">
+                    <input id="emailAddress" type="email" placeholder="Your email address">
+                    <div class="msg_cont d_flex flex__e_c">
+                        <textarea id="message" placeholder="Message"></textarea>
+                        <div class="send d_flex flex__c_c">
+                            <a id="sendEmail" href="#" onclick="sendEmail(); return false;">
+                                <img src="./assets/logo/send.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

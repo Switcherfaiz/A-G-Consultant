@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+input,
+button,
+select {
+    outline: none;
+}
+
+/* Hide the spinner arrows for number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+    appearance: textfield;
+}
+
+input {
+    text-transform: none;
+}
+
+.no_click {
+    pointer-events: none;
+}
+
+.display_off_d {
+    display: none !important;
+}
+
+/* ------------------------ Content helper -------------------------------- */
+
+.hide_D {
+    display: none !important;
+}
+
+
+.hide_V {
+    visibility: hidden !important;
+}
+
+
+
+
+
+/* ----------box shadow-------- */
+
+.--b_shadow {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+
+/* ----input css */
+
+.brel_inp_out {
+    position: relative;
+    margin: 20px;
+}
+
+.brel_inp {
+    height: 8px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid var(--pri_color);
+    font-size: var(--desktop-p-size);
+    color: var(--main_text_color);
+    background: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.brel_inp:focus {
+    border-bottom-color: var(--hover-color);
+}
+
+.brel_inp_border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--hover-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.brel_inp:focus+.brel_inp_border {
+    transform: scaleX(1);
+}
+
+
+/* ------- scroll bar --------- */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
+
+/* width & height modes */
+
+.width_F {
+    width: 100% !important;
+}
+
+.width_H {
+    width: 50% !important;
+}
+
+.width_Q {
+    width: 25% !important;
+}
+
+.height_F {
+    height: 100% !important;
+}
+
+.height_H {
+    height: 50% !important;
+}
+
+.height_Q {
+    height: 25% !important;
+}
+
+
+.width_F_10 {
+    width: 90% !important;
+}
+
+.width_H_10 {
+    width: 40% !important;
+}
+
+
+.width_H_5 {
+    width: 55% !important;
+}
+
+.width_Q_10 {
+    width: 15% !important;
+}
+
+.width_Q_5 {
+    width: 20% !important;
+}
+
+.height_F_10 {
+    height: 90% !important;
+}
+
+.height_H_10 {
+    height: 40% !important;
+}
+
+.height_Q_10 {
+    height: 15% !important;
+}
+
+
+
+
+
+/* flex modes */
+
+.d_flex {
+    display: flex;
+}
+
+.flex__co {
+    flex-direction: column;
+}
+
+.flex__ro {
+    flex-direction: row;
+}
+
+.flex__ro_r {
+    flex-direction: row-reverse;
+}
+
+.flex__co_r {
+    flex-direction: column-reverse;
+}
+
+.flex__c_c {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex__c_s {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex__c_e {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex__u_e {
+    align-items: unset;
+    justify-content: flex-end;
+}
+
+.flex__c_a {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex__c_b {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex__c_u {
+    align-items: center;
+    justify-content: unset;
+}
+
+.flex__u_c {
+    align-items: unset;
+    justify-content: center;
+}
+
+.flex__u_b {
+    align-items: unset;
+    justify-content: space-between;
+}
+
+.flex__u_a {
+    align-items: unset;
+    justify-content: space-around;
+}
+
+.flex__s_c {
+    align-items: self-start;
+    justify-content: center;
+}
+.flex__s_b {
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+
+.flex__e_c {
+    align-items: self-end;
+    justify-content: center;
+}
+
+.flex__e_b {
+    align-items: self-end;
+    justify-content: space-between;
+}
+
+.flex__s_u {
+    align-items: self-start;
+    justify-content: unset;
+}
+
+.flex__e_u {
+    align-items: self-end;
+    justify-content: unset;
+}
+
+.flex__s_a {
+    align-items: self-start;
+    justify-content: space-around;
+}
+
+.flex__wrap {
+    flex-wrap: wrap;
+}
+
+.flex__wrap_r {
+    flex-wrap: wrap-reverse;
+}
+
+.flex__wrap_n {
+    flex-wrap: nowrap;
+}
+
+.flex__wrap_n_r {
+    flex-wrap: nowrap-reverse;
+}
+
+.flex__none {
+    flex: none;
+}
+
+/* ---- ellipsis settings */
+
+.ellipsis_s {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+/* --------------------- font styles-------------- */
+
+.F_bold {
+    font-weight: bold !important;
+}
+
+.F_bolder {
+    font-weight: bolder !important;
+}
+
+.F_light {
+    font-weight: lighter !important;
+}
+
+.F_normal {
+    font-weight: normal !important;
+}
+
+.F_unset {
+    font-weight: unset !important;
+}
+
+.F_100 {
+    font-weight: 100 !important;
+}
+
+.F_200 {
+    font-weight: 200 !important;
+}
+
+.F_300 {
+    font-weight: 300 !important;
+}
+
+.F_400 {
+    font-weight: 400 !important;
+}
+
+.F_500 {
+    font-weight: 500 !important;
+}
+
+.F_600 {
+    font-weight: 600 !important;
+}
+
+.F_700 {
+    font-weight: 700 !important;
+}
+
+.F_800 {
+    font-weight: 800 !important;
+}
+
+.F_900 {
+    font-weight: 900 !important;
+}
+
+
+/* ------------- shadows --------------------------------- */
+
+.best_shadow {
+    box-shadow: 0 0 10px 4px rgb(0, 0, 0, 0.2);
+}
+
+.best_shadow_s {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.071);
+}
+
+/* ------------------------ text transformation -------------------- */
+
+
+.T_t_c {
+    text-transform: capitalize;
+}
+
+.T_t_U {
+    text-transform: uppercase;
+}
+
+.T_t_l {
+    text-transform: lowercase;
+}
+
+.T_t_u {
+    text-transform: unset;
+}
+
+.T_t_n {
+    text-transform: none;
+}
+
+.T_t_uln {
+    text-decoration: underline;
+}
+
+.T_t_ln {
+    text-decoration: line-through;
+}
+
+
+
+/* ----------------------------- text align ------------------------------- */
+
+.T_a_c {
+    text-align: center;
+}
+
+.T_a_l {
+    text-align: left;
+}
+
+.T_a_r {
+    text-align: right;
+}
+
+.T_a_j {
+    text-align: justify;
+}
+
+.T_a_u {
+    text-align: unset;
+}
+
+.T_a_n {
+    text-align: none;
+}
