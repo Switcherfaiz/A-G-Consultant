@@ -399,6 +399,7 @@ a {
             .item {
                 flex: none;
                 min-width: 325px;
+                width: 382px;
                 gap: 20px;
                 background-color: var(--main_color);
                 padding: 10px 20px;
@@ -412,9 +413,11 @@ a {
                 }
 
                 p {
+                    text-align: left;
                     font-size: medium;
                     font-weight: bold;
                     color: var(--white);
+                    width: calc(100% - 30px);
                 }
             }
         }
