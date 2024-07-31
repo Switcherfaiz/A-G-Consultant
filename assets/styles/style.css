@@ -165,6 +165,12 @@ a {
         .subtitle {
             font-size: clamp(0px, 6vw, 35px);
             font-weight: 500;
+            color: var(--white);
+        }
+
+        .moto_word {
+
+            color: var(--white);
         }
 
         div {
