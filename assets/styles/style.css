@@ -109,13 +109,44 @@ a {
 .hero_section {
     /* margin-top: 80px; */
     width: 100%;
-    padding-inline: 100px;
-    padding-block: 30px;
+
     flex-wrap: wrap;
-    height: 70%;
+    height: 70vh;
     background-color: var(--main_background);
+    position: relative;
+
+    .carousel {
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        position: absolute;
+
+        .carousel-track {
+            display: flex;
+            top: 0;
+            left: 0;
+            overflow: scroll;
+            scroll-snap-type: x mandatory;
+            width: 100%;
+            height: 100%;
+
+            .carousel-item {
+                height: 100%;
+                min-width: 100%;
+                box-sizing: border-box;
+                /* padding: 20px; */
+                scroll-snap-align: start;
+            }
+        }
+
+    }
 
     .hero_cont {
+        z-index: 2;
+        padding-inline: 100px;
+        padding-block: 30px;
+        position: relative;
         width: 100%;
         max-width: 1400px;
     }
